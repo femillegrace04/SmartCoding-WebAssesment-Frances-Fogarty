@@ -1,0 +1,391 @@
+body {
+  line-height: 1;
+}
+
+h2 {
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  margin: 0;
+}
+
+header .header-brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.stockholmlogo {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-left: 0;
+  /* width: fit-content; */
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+header nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+  }
+
+  header .header-cases {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .stockholmlogo {
+    display: block;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+  }
+}
+/*footer contact*/
+footer {
+  width: calc(100% - 80px);
+  height: 50%;
+  padding: 20px 40px;
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  line-height: 1.3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-sm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 150px;
+}
+
+.footer-sm img {
+  width: 50%;
+  margin-top: 30px;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 8px;
+}
+
+.footer-section p {
+  font-size: 15px;
+}
+
+.footer-section h5 {
+  font-size: 30px;
+}
+
+/* header*/
+
+* {
+  text-decoration: none;
+}
+/*index*/
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(img/StockholmStad.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 50px;
+}
+
+.index-banner h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 34px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.main-sentence {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px 20px;
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+.flex-grid-thirds {
+  display: block;
+}
+
+.stockholm-trivia {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.col {
+  background: #f3f3f3;
+  border-style: solid;
+  border-width: 5px;
+  padding: 60px;
+  border-radius: 10px;
+  vertical-align: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  height: 30px;
+  font-weight: 900;
+  box-shadow: 0px 5px 10px rgba(55, 64, 192, 0.15);
+}
+
+.col:hover {
+  box-shadow: 0px 5px 10px rgba(55, 64, 192, 0.35);
+}
+
+.attraction-image {
+  width: 100%;
+}
+
+.attraction {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px 0;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.attraction-description {
+  line-height: 1.4;
+  padding: 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h1 {
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .index-banner h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+  }
+
+  .index-banner h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .col {
+    background: #f3f3f3;
+    border-style: solid;
+    border-width: 5px;
+    padding: 60px;
+    border-radius: 10px;
+    vertical-align: auto;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    box-shadow: 0px 5px 10px rgba(55, 64, 192, 0.15);
+  }
+
+  .col:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /*footer*/
+
+  footer {
+    width: calc(100% - 80px);
+    height: 50%;
+    padding: 20px 40px;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+    line-height: 1.3;
+  }
+
+  .footer-sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 150px;
+  }
+
+  .footer-sm img {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-column-gap: 20px;
+  }
+
+  .footer-section p {
+    font-size: 15px;
+  }
+  .footer-section h5 {
+    font-size: 20px;
+  }
+
+  .attraction-image {
+    width: 100%;
+  }
+
+  .attraction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .attraction-description {
+    line-height: 1.4;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .footer-links-cases {
+      display: block;
+    }
+
+    footer ul {
+      padding-right: 30px;
+    }
+
+    footer ul li p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      color: #fff;
+      line-height: 30px;
+    }
+  }
+}
